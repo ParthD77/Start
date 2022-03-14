@@ -25,9 +25,13 @@ while True:
                 elif usertry != ("yes", "no"):
                     print ("Please only enter yes or no")
     else:
-        usertry = input("Incorrect\n Would you like to try again. \nType yes or no.?\n")
+        usertry = input("Incorrect\n Would you like to try again. \nType yes or no.\n")
         if usertry == ("yes"):
             print ("Okay try again")
+        if usertry == ("no"):
+            broken = True
+            if broken:
+                break
         elif usertry != ("yes" or "no"):
             print ("Please only enter yes or no")
             broken = True
